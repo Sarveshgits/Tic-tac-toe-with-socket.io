@@ -1,0 +1,51 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: rgb(92, 175, 175);
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #f0f0f0;
+}
+
+.game {
+  max-width: calc(3 * 100px);
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.status {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: rgb(3, 13, 21);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid grey;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cell:hover {
+  background-color: #c0dbe5;
+}
+
+.reset-button {
+  padding: 5px 10px;
+  font-family: "Montserrat", sans-serif;
+}
